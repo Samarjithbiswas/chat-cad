@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Capability map across solids, sketches, assemblies, sheet metal, library parts, aerospace mockups, simulation and documentation">
+<defs><linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#0b1620"/></linearGradient></defs><rect width="1200" height="360" rx="14" fill="url(#cbg)"/><rect x="0.5" y="0.5" width="1199" height="359" rx="14" fill="none" stroke="#233240" stroke-width="1"/>
+<text x="28" y="32" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#6e7f91" text-anchor="start" letter-spacing="1.4">WHAT IT CAN BUILD</text>
+<rect x="24" y="52" width="176" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/>
+<text x="112" y="112" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#5eead4" text-anchor="middle">140+</text>
+<text x="112" y="136" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7d8ea0" text-anchor="middle">chat-callable</text>
+<text x="112" y="153" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7d8ea0" text-anchor="middle">operations</text>
+<rect x="48" y="164" width="128" height="3" rx="1.5" fill="#233240"/>
+<rect x="48" y="163.4" width="40" height="4.2" rx="2.1" fill="#2dd4bf"><animate attributeName="x" values="48;136;48" dur="4.6s" repeatCount="indefinite"/></rect>
+<rect x="24" y="196" width="176" height="140" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/>
+<text x="44" y="222" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">One-command</text>
+<text x="44" y="240" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">assemblies</text>
+<text x="44" y="264" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">turbojet</text>
+<text x="44" y="282" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">turbofan</text>
+<text x="44" y="300" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">gear_train</text>
+<text x="44" y="318" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">bolt_stack &#183; engine</text>
+<rect x="216" y="52" width="230" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="216" y="52" width="230" height="3.2" rx="1.6" fill="#2dd4bf"/>
+<text x="238" y="80" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Solids &amp; sketches</text>
+<text x="238" y="104" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">primitives, booleans, fillet, chamfer</text>
+<text x="238" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">shell, draft, revolve, loft, sweep</text>
+<text x="238" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">2D sketcher with a constraint solver</text>
+<text x="238" y="158" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">pattern, mirror, transform gizmos</text>
+<rect x="462" y="52" width="230" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="462" y="52" width="230" height="3.2" rx="1.6" fill="#60a5fa"/>
+<text x="484" y="80" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Assemblies</text>
+<text x="484" y="104" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">cq.Assembly with mate solving</text>
+<text x="484" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">joints, alignment, interference</text>
+<text x="484" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">bill of materials</text>
+<text x="484" y="158" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">assembly STEP export</text>
+<rect x="708" y="52" width="230" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="708" y="52" width="230" height="3.2" rx="1.6" fill="#fbbf24"/>
+<text x="730" y="80" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Sheet metal &amp; profiles</text>
+<text x="730" y="104" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">sheet, L-bend, U-bend, box, flange</text>
+<text x="730" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">T-slot extrusion, I-beam, angle</text>
+<text x="730" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">tube, C-channel</text>
+<text x="730" y="158" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">structural framing</text>
+<rect x="954" y="52" width="222" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="954" y="52" width="222" height="3.2" rx="1.6" fill="#34d399"/>
+<text x="976" y="80" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Library parts</text>
+<text x="976" y="104" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">M-bolt with real thread, nut</text>
+<text x="976" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">washer, bearing, hinge</text>
+<text x="976" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">pulley, gear, spring</text>
+<text x="976" y="158" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">drop-in and mate</text>
+<rect x="216" y="196" width="230" height="140" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="216" y="196" width="230" height="3.2" rx="1.6" fill="#a78bfa"/>
+<text x="238" y="224" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Aerospace mockups</text>
+<text x="238" y="248" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">turbine wheel, compressor stage</text>
+<text x="238" y="266" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">combustor, nozzle, propeller</text>
+<text x="238" y="284" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">NACA airfoil</text>
+<text x="238" y="302" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">honeycomb core</text>
+<rect x="462" y="196" width="230" height="140" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="462" y="196" width="230" height="3.2" rx="1.6" fill="#f87171"/>
+<text x="484" y="224" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Simulation</text>
+<text x="484" y="248" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">linear-elastic FEA</text>
+<text x="484" y="266" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">steady-state thermal</text>
+<text x="484" y="284" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">gmsh meshing</text>
+<text x="484" y="302" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">scikit-fem solve, subprocess</text>
+<text x="484" y="320" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">on the same B-rep geometry</text>
+<rect x="708" y="196" width="230" height="140" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="708" y="196" width="230" height="3.2" rx="1.6" fill="#22d3ee"/>
+<text x="730" y="224" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Documentation out</text>
+<text x="730" y="248" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">4-view engineering drawing PDF</text>
+<text x="730" y="266" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">dimension arrows, title block</text>
+<text x="730" y="284" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">mass-properties summary</text>
+<text x="730" y="302" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">STEP and STL</text>
+<rect x="954" y="196" width="222" height="140" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="954" y="196" width="222" height="3.2" rx="1.6" fill="#e879f9"/>
+<text x="976" y="224" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">Your rules, remembered</text>
+<text x="976" y="248" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">save a note once</text>
+<text x="976" y="266" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">&#8220;M4 bolts always&#8221;</text>
+<text x="976" y="284" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">&#8220;wall &#8805; 3 mm for FDM&#8221;</text>
+<text x="976" y="302" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">retrieved into every</text>
+<text x="976" y="320" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.8" font-weight="400" fill="#8b949e" text-anchor="start">agent prompt</text>
+</svg>

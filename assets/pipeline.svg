@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Pipeline from chat prompt through the agent loop and B-rep kernel to export and simulation">
+<defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#0b1620"/></linearGradient></defs><rect width="1200" height="300" rx="14" fill="url(#pbg)"/><rect x="0.5" y="0.5" width="1199" height="299" rx="14" fill="none" stroke="#233240" stroke-width="1"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#3d5165"/></marker></defs>
+<text x="30" y="34" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#6e7f91" text-anchor="start" letter-spacing="1.4">THE LOOP</text>
+<path d="M148 150 H302" stroke="#2b3a48" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<path d="M450 150 H524" stroke="#2b3a48" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<path d="M672 150 H746" stroke="#2b3a48" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<path d="M894 150 H968" stroke="#2b3a48" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<circle r="4.2" fill="#2dd4bf"><animateMotion dur="4.8s" begin="0s" repeatCount="indefinite" path="M148,150 H968"/><animate attributeName="opacity" values="0;1;1;0" dur="4.8s" begin="0s" repeatCount="indefinite"/></circle>
+<circle r="3.2" fill="#60a5fa"><animateMotion dur="4.8s" begin="1.6s" repeatCount="indefinite" path="M148,150 H968"/><animate attributeName="opacity" values="0;1;1;0" dur="4.8s" begin="1.6s" repeatCount="indefinite"/></circle>
+<rect x="24" y="104" width="124" height="92" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="24" y="104" width="124" height="3.2" rx="1.6" fill="#2dd4bf"/>
+<text x="86.0" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="middle">Chat</text>
+<text x="86.0" y="160" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">plain English</text>
+<text x="86.0" y="177" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">or typed command</text>
+<rect x="302" y="86" width="148" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="302" y="86" width="148" height="3.2" rx="1.6" fill="#a78bfa"/>
+<text x="376.0" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="middle">5-agent loop</text>
+<text x="376.0" y="142" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">Planner</text>
+<text x="376.0" y="159" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">Modeler</text>
+<text x="376.0" y="176" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">Visual critic</text>
+<text x="376.0" y="193" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">DFM &#183; Standards</text>
+<rect x="524" y="104" width="148" height="92" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="524" y="104" width="148" height="3.2" rx="1.6" fill="#60a5fa"/>
+<text x="598.0" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="middle">B-rep kernel</text>
+<text x="598.0" y="160" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">CadQuery /</text>
+<text x="598.0" y="177" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">OpenCascade</text>
+<rect x="746" y="104" width="148" height="92" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="746" y="104" width="148" height="3.2" rx="1.6" fill="#fbbf24"/>
+<text x="820.0" y="140" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="middle">Viewport</text>
+<text x="820.0" y="160" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">feature tree, gizmos</text>
+<text x="820.0" y="177" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">19 PBR materials</text>
+<rect x="968" y="86" width="208" height="128" rx="10" fill="#151c25" stroke="#263442" stroke-width="1.1"/><rect x="968" y="86" width="208" height="3.2" rx="1.6" fill="#34d399"/>
+<text x="1072.0" y="122" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="middle">Ship it</text>
+<text x="1072.0" y="142" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">STEP &#183; STL &#183; 4-view PDF</text>
+<text x="1072.0" y="159" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">linear-elastic FEA</text>
+<text x="1072.0" y="176" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">steady-state thermal</text>
+<text x="1072.0" y="193" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8b949e" text-anchor="middle">assembly STEP</text>
+<path d="M376 214 C376 258, 200 258, 148 214" fill="none" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<text x="262" y="276" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#a78bfa" text-anchor="middle">critic rejects &#8594; re-model before you ship</text>
+</svg>

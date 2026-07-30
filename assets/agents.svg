@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-label="The five agents: planner, modeler, visual critic, DFM critic and standards critic">
+<defs><linearGradient id="abg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#100e1a"/></linearGradient></defs><rect width="1000" height="380" rx="14" fill="url(#abg)"/><rect x="0.5" y="0.5" width="999" height="379" rx="14" fill="none" stroke="#233240" stroke-width="1"/>
+<text x="28" y="32" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#6e7f91" text-anchor="start" letter-spacing="1.4">WHO CHECKS THE WORK</text>
+<circle cx="500" cy="200" r="128" fill="none" stroke="#302b46" stroke-width="1.2" stroke-dasharray="3 5"/>
+<g>
+<animateTransform attributeName="transform" type="rotate" from="0 500 200" to="360 500 200" dur="9s" repeatCount="indefinite"/>
+<circle cx="500" cy="72" r="13" fill="#a78bfa" opacity="0.18"/>
+<circle cx="500" cy="72" r="6" fill="#a78bfa" opacity="0.9"/>
+</g>
+<circle cx="500" cy="200" r="60" fill="#191428" stroke="#463a6b" stroke-width="1.4"/>
+<text x="500" y="196" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#d8c9ff" text-anchor="middle">design</text>
+<text x="500" y="216" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#d8c9ff" text-anchor="middle">loop</text>
+<text x="500" y="236" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#8b7fb0" text-anchor="middle">iterate until clean</text>
+<g stroke="#3a3355" stroke-width="1.2">
+<path d="M500 140 L500 96"/>
+<path d="M548 178 L636 140"/>
+<path d="M548 226 L618 268"/>
+<path d="M452 226 L382 268"/>
+<path d="M452 178 L364 140"/>
+</g>
+<rect x="404" y="44" width="192" height="50" rx="9" fill="#171e28" stroke="#2dd4bf" stroke-opacity="0.55" stroke-width="1.1"/>
+<text x="500" y="66" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="middle">1 &#183; Planner</text>
+<text x="500" y="84" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" text-anchor="middle">breaks the prompt into steps</text>
+<rect x="640" y="112" width="192" height="50" rx="9" fill="#171e28" stroke="#60a5fa" stroke-opacity="0.55" stroke-width="1.1"/>
+<text x="736" y="134" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="middle">2 &#183; Modeler</text>
+<text x="736" y="152" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" text-anchor="middle">calls the CAD operations</text>
+<rect x="622" y="266" width="192" height="50" rx="9" fill="#171e28" stroke="#fbbf24" stroke-opacity="0.55" stroke-width="1.1"/>
+<text x="718" y="288" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="middle">3 &#183; Visual critic</text>
+<text x="718" y="306" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" text-anchor="middle">looks at the render, vision LLM</text>
+<rect x="186" y="266" width="192" height="50" rx="9" fill="#171e28" stroke="#f87171" stroke-opacity="0.55" stroke-width="1.1"/>
+<text x="282" y="288" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="middle">4 &#183; DFM critic</text>
+<text x="282" y="306" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" text-anchor="middle">wall too thin, draft, radii</text>
+<rect x="168" y="112" width="192" height="50" rx="9" fill="#171e28" stroke="#34d399" stroke-opacity="0.55" stroke-width="1.1"/>
+<text x="264" y="134" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="middle">5 &#183; Standards critic</text>
+<text x="264" y="152" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" text-anchor="middle">your saved rules, TF-IDF RAG</text>
+<text x="500" y="360" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#7d6ea8" text-anchor="middle">the critics run before you export, not after you machine it</text>
+</svg>

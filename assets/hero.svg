@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Chat CAD: chat-driven mechanical CAD with a real B-rep kernel">
+<defs><linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#0b1620"/></linearGradient></defs><rect width="1200" height="340" rx="14" fill="url(#hbg)"/><rect x="0.5" y="0.5" width="1199" height="339" rx="14" fill="none" stroke="#233240" stroke-width="1"/>
+<defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2dd4bf"/><stop offset="50%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient><linearGradient id="swp" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/><stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.9"/><stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient></defs>
+<g stroke="#1b2632" stroke-width="1">
+<path d="M0 85h1200"/>
+<path d="M0 170h1200"/>
+<path d="M0 255h1200"/>
+<path d="M150 0v340"/>
+<path d="M300 0v340"/>
+<path d="M450 0v340"/>
+<path d="M600 0v340"/>
+<path d="M750 0v340"/>
+<path d="M900 0v340"/>
+<path d="M1050 0v340"/>
+</g>
+<g transform="translate(990 170)">
+<g>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+<path d="M0,-74 L64,-37 L64,37 L0,74 L-64,37 L-64,-37 Z" fill="none" stroke="#2dd4bf" stroke-opacity="0.34" stroke-width="1.1"/>
+<path d="M0,-52 L45,-26 L45,26 L0,52 L-45,26 L-45,-26 Z" fill="none" stroke="#2dd4bf" stroke-opacity="0.26" stroke-width="1.1"/>
+<path d="M0,-74 L0,-52 M64,-37 L45,-26 M64,37 L45,26 M0,74 L0,52 M-64,37 L-45,26 M-64,-37 L-45,-26" fill="none" stroke="#2dd4bf" stroke-opacity="0.22" stroke-width="1.1"/>
+<path d="M-94 0 H94 M0 -94 V94" fill="none" stroke="#60a5fa" stroke-opacity="0.16" stroke-width="1.1"/>
+<circle r="22" fill="none" stroke="#60a5fa" stroke-opacity="0.24" stroke-width="1.1"/>
+</g>
+<circle r="3" fill="#2dd4bf">
+<animate attributeName="r" values="2.4;4.4;2.4" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+</g>
+<text x="58" y="112" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="60" font-weight="700" fill="#e6edf3" text-anchor="start" letter-spacing="-1.2">Chat CAD</text>
+<rect x="58" y="128" width="132" height="4" rx="2" fill="url(#acc)"/>
+<text x="58" y="178" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#93b7c9" text-anchor="start">Describe a part in plain English. Get real CAD out.</text>
+<text x="58" y="209" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="400" fill="#7d8ea0" text-anchor="start">B-rep kernel &#183; 5-agent design loop &#183; STEP / STL / drawing PDF &#183; real FEA</text>
+<rect x="58" y="232" width="620" height="2" rx="1" fill="#233240"/>
+<rect x="58" y="231.2" width="200" height="3.6" rx="1.8" fill="url(#swp)"><animate attributeName="x" values="58;478;58" dur="5.4s" repeatCount="indefinite"/></rect>
+<rect x="58" y="258" width="112" height="30" rx="15" fill="#132b2a" stroke="#2dd4bf" stroke-opacity="0.5" stroke-width="1"/>
+<text x="114.0" y="278" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#5eead4" text-anchor="middle">CadQuery</text>
+<rect x="182" y="258" width="130" height="30" rx="15" fill="#14212f" stroke="#60a5fa" stroke-opacity="0.5" stroke-width="1"/>
+<text x="247.0" y="278" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#93c5fd" text-anchor="middle">OpenCascade</text>
+<rect x="324" y="258" width="96" height="30" rx="15" fill="#2a2415" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="1"/>
+<text x="372.0" y="278" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#fcd34d" text-anchor="middle">Three.js</text>
+<rect x="432" y="258" width="108" height="30" rx="15" fill="#1c2430" stroke="#8b949e" stroke-opacity="0.5" stroke-width="1"/>
+<text x="486.0" y="278" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#adbac7" text-anchor="middle">scikit-fem</text>
+<rect x="552" y="258" width="168" height="30" rx="15" fill="#1c2430" stroke="#8b949e" stroke-opacity="0.5" stroke-width="1"/>
+<text x="636.0" y="278" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#adbac7" text-anchor="middle">bring-your-own LLM</text>
+</svg>

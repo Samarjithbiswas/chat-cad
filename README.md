@@ -1,75 +1,79 @@
-# Chat CAD
+<div align="center">
 
-**Chat-driven mechanical CAD with a real B-rep kernel and a multi-agent design loop.**
-Describe a part in plain English or with terse typed commands; get an exportable
-STEP / STL / engineering-drawing PDF in seconds. Free local LLM support.
-Real FEA. Windows installer.
+<img src="assets/hero.svg" alt="Chat CAD" width="100%">
 
-[Download installer (Windows)](https://github.com/Samarjithbiswas/chat-cad/releases/download/v0.1.0/ChatCAD_Setup.exe)
-· [Pitch deck](./PITCH.md)
-· [Architecture](#architecture)
-· [Demo script](#demo-script-90-second-loop)
+<br>
 
----
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Kernel](https://img.shields.io/badge/kernel-OpenCascade%20B--rep-60a5fa)](https://cadquery.readthedocs.io/)
+[![FEA](https://img.shields.io/badge/FEA-gmsh%20%2B%20scikit--fem-f87171)](https://scikit-fem.readthedocs.io/)
+[![Platform](https://img.shields.io/badge/Windows-installer-0078D4?logo=windows&logoColor=white)](https://github.com/Samarjithbiswas/ChatCAD/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-34d399)](LICENSE)
+[![Offline](https://img.shields.io/badge/works-offline%20with%20Ollama-a78bfa)](#pick-an-llm-optional)
 
-## In One Picture
+**[Download for Windows](https://github.com/Samarjithbiswas/ChatCAD/releases/latest)**
+&nbsp;·&nbsp; [Pitch deck](./PITCH.md)
+&nbsp;·&nbsp; [How it works](#the-loop)
+&nbsp;·&nbsp; [90-second demo](#90-second-demo)
+&nbsp;·&nbsp; [Architecture](#architecture)
 
-```
-Chat / natural language
-       │
-       ▼
-┌───────────────────────────────────────────────────────────────┐
-│  Planner ─► Modeler ─► Visual Critic ─► DFM Critic            │
-│      (5-agent design loop with Claude vision / Gemini)         │
-└───────────────────────────────────────────────────────────────┘
-       │
-       ▼
-CadQuery / OpenCascade B-rep kernel
-       │
-       ▼
-SolidWorks-style viewport: feature tree · gizmos · view cube
-       · right-click menu · 19 PBR material presets · IBL
-       │
-       ▼
-Export: STEP · STL · 4-view PDF · STEP for assemblies
-Simulate: linear-elastic FEA · steady-state thermal (gmsh + scikit-fem)
-```
+</div>
 
 ---
 
-## Why Chat CAD
+## What it does
 
-- **Real B-rep, not mesh tris.** Hand the output to a CAM package or machinist.
-- **5-agent design loop** — Planner / Modeler / Visual / DFM / Standards critics.
-  Catches "wall too thin" before the user ships, not after.
-- **Bring-your-own LLM.** Anthropic, Google Gemini, local Ollama (offline,
-  free), or in-browser WebLLM (no install, no key, ~600 MB one-time download).
-- **140+ chat-callable operations** spanning primitives, booleans, sketches
-  with constraint solver, assemblies with mate solving, sheet metal,
-  structural profiles (T-slot / I-beam / angle iron / C-channel), library
-  fasteners (M-bolt + thread, nut, washer, bearing, hinge, pulley, gear,
-  spring), aerospace mockups (turbine wheel, propeller, compressor stage,
-  combustor, nozzle, NACA airfoil, honeycomb), and one-command complex
-  assemblies (`turbojet`, `turbofan`, `bolt_stack`, `gear_train`, `engine`).
-- **Real FEA on the same geometry** — most AI CAD tools stop at "looks like
-  a part." Chat CAD will mesh and solve it (linear-elastic + thermal).
-- **Engineering drawings to PDF** with 4-view layout + dimension arrows +
-  title block + mass-properties summary.
-- **Knowledge layer** — your saved notes ("we always use M4 bolts", "wall
-  thickness ≥ 3 mm for FDM") get retrieved into every agent prompt via
-  TF-IDF RAG.
+Describe a part in plain English, or in terse typed commands, and get an exportable
+**STEP / STL / engineering-drawing PDF** in seconds. The geometry is real B-rep, so you
+can hand it to a CAM package or a machinist. Then mesh and solve it in the same tool.
 
----
+No API key required: it runs in typed-command mode out of the box, or against a free
+local Ollama model with no network at all.
 
-## Quick Start
+## The loop
 
-### Windows (recommended)
+<div align="center">
+<img src="assets/pipeline.svg" alt="Chat prompt to agent loop to B-rep kernel to viewport to export and simulate" width="100%">
+</div>
 
-1. Download [`ChatCAD_Setup.exe`](https://github.com/Samarjithbiswas/chat-cad/releases/download/v0.1.0/ChatCAD_Setup.exe)
-2. Double-click. Wait ~5 min for the one-time Miniforge + CadQuery install (~1.5 GB).
-3. Launch via the Desktop shortcut. Your browser opens to `http://127.0.0.1:5000/`.
+Most AI CAD demos stop at "looks like a part". The difference here is what happens after
+the geometry exists: five agents inspect it, and then the same geometry gets meshed and
+solved.
 
-### Manual / dev
+<div align="center">
+<img src="assets/agents.svg" alt="The five agents: planner, modeler, visual critic, DFM critic, standards critic" width="86%">
+</div>
+
+The visual critic actually looks at a render through a vision model. The DFM critic
+catches "wall too thin" before you ship, not after. The standards critic reads the notes
+you saved once and applies them to every part after that.
+
+## What it can build
+
+<div align="center">
+<img src="assets/capabilities.svg" alt="Capability map across solids, sketches, assemblies, sheet metal, library parts, aerospace mockups, simulation and documentation" width="100%">
+</div>
+
+## Why bother
+
+| | |
+|---|---|
+| **Real B-rep, not mesh triangles** | Output goes to CAM or a machinist. Mesh-only tools cannot. |
+| **Critics run before export** | A design loop that rejects its own bad output is worth more than a faster generator. |
+| **Bring your own LLM** | Anthropic, Gemini, local Ollama, in-browser WebLLM, or none at all. |
+| **Simulation on the same geometry** | Linear-elastic and steady-state thermal, on the B-rep you just made, not a re-import. |
+| **Drawings, not just models** | 4-view PDF with dimensions, title block and mass properties. |
+| **It remembers your rules** | Saved notes are retrieved into every agent prompt with TF-IDF. |
+
+## Quick start
+
+### Windows
+
+1. Download [`ChatCAD_Setup.exe`](https://github.com/Samarjithbiswas/ChatCAD/releases/latest)
+2. Double-click. One-time Miniforge and CadQuery install, about 5 minutes and 1.5 GB.
+3. Launch from the desktop shortcut. Your browser opens at `http://127.0.0.1:5000/`.
+
+### From source
 
 ```powershell
 conda create -n chatcad python=3.11 -y
@@ -81,89 +85,86 @@ python app.py
 
 ### Pick an LLM (optional)
 
-| Backend | How |
-|---|---|
-| **Anthropic Claude** (best quality) | Paste `sk-ant-...` key in settings → ~0.5¢/part |
-| **Google Gemini** (free tier) | Paste `AIza...` key from aistudio.google.com |
-| **Local Ollama** (offline, free) | Install Ollama + `ollama pull qwen2.5` |
-| **In-browser WebLLM** (no install, no key) | Pick a `browser:` model from the dropdown |
-| **None — typed-command mode** | Works out of the box, no LLM required |
+| Backend | How | Cost |
+|---|---|---|
+| **Anthropic Claude** | paste an `sk-ant-...` key in settings | best quality, about half a cent per part |
+| **Google Gemini** | paste an `AIza...` key from aistudio.google.com | free tier |
+| **Local Ollama** | install Ollama, then `ollama pull qwen2.5` | free, fully offline |
+| **In-browser WebLLM** | pick a `browser:` model from the dropdown | free, no key, 600 MB one-time |
+| **None** | typed-command mode | works out of the box |
 
----
+Keys are sent with the request and are not stored server-side. They live in your
+browser's `localStorage`.
 
-## Demo Script (90-second loop)
+## 90-second demo
 
 ```text
-1. Launch → clean professional viewport
-2. Type:   bolt_stack demo M8 15 60
-              → plate + 2 washers + threaded M8 bolt + hex nut appears
-3. Right-click the bolt → Mirror about XY → second bolt
-4. Render tab → Polished steel → Apply to all
-5. File tab → Drawing PDF → 4-view engineering drawing downloads
-6. Simulate tab → click the plate → Run FEA → real stress in 8 seconds
-7. Chat:   "turbojet engine, 200 mm fan, 600 mm length" (Design Agent mode)
-              → 19-sub-part realistic axial-flow turbojet builds itself,
-                 visual critic checks each milestone
-8. Render tab → Brushed aluminum + Outdoor sky environment → catalog shot
+1. Launch                       clean viewport, feature tree, view cube
+2. bolt_stack demo M8 15 60     plate + 2 washers + threaded M8 bolt + hex nut
+3. right-click bolt             Mirror about XY, second bolt appears
+4. Render tab                   Polished steel, apply to all
+5. File tab                     Drawing PDF, 4-view drawing downloads
+6. Simulate tab                 click the plate, Run FEA, real stress in 8 s
+7. Design Agent mode            "turbojet engine, 200 mm fan, 600 mm length"
+                                19 sub-parts build themselves, critic checks
+                                each milestone
+8. Render tab                   Brushed aluminium + outdoor sky, catalog shot
 ```
-
-What competitors take **4–8 hours** for, this loop does in **~2 minutes**.
-
----
 
 ## Architecture
 
-```
-app.py
-├── Flask server (chat, scene, drawing, FEA endpoints)
-├── cad_engine.py — CadEngine wrapper around CadQuery
-│   ├── sketch_engine.py    — 2D sketcher + scipy constraint solver
-│   ├── assembly_engine.py  — cq.Assembly with mate solver
-│   ├── library.py          — fasteners, gears, springs, bearings, aerospace
-│   ├── materials.py        — density table + mass-properties
-│   ├── profiles.py         — T-slot, I-beam, angle, tube, channel
-│   ├── sheet_metal.py      — sheet, L-bend, U-bend, box, flange
-│   ├── step_io.py          — STEP import
-│   ├── drawings.py         — 4-view PDF with dimensions
-│   ├── knowledge.py        — TF-IDF RAG over user notes
-│   └── assemblies_recipes.py — turbojet, turbofan, bolt_stack, gear_train
-├── llm.py        — Claude tool schema + tool-use loop, regex parser fallback
-├── llm_gemini.py — Google Gemini backend
-├── llm_ollama.py — local Ollama backend with parser-fallback
-├── agents.py     — Design Agent: planner + modeler + visual/DFM/standards critics
-├── fea.py + fea_worker.py — gmsh + scikit-fem subprocess wrapper
-└── templates/index.html — Three.js viewport (view cube, gizmos, right-click,
-                           PBR + IBL, 19 material presets, ribbon toolbar)
-```
+```mermaid
+flowchart TD
+    U["Chat or typed command"] --> A["app.py<br/>Flask: chat, scene, drawing, FEA"]
+    A --> AG["agents.py<br/>planner, modeler, 3 critics"]
+    AG --> L{"LLM backend"}
+    L --> L1["llm.py<br/>Claude tool-use"]
+    L --> L2["llm_gemini.py"]
+    L --> L3["llm_ollama.py<br/>offline"]
+    AG --> CE["cad_engine.py<br/>CadQuery / OpenCascade"]
 
----
+    CE --> S["sketch_engine.py<br/>2D sketcher, scipy constraints"]
+    CE --> AS["assembly_engine.py<br/>mate solver"]
+    CE --> LB["library.py<br/>fasteners, gears, bearings"]
+    CE --> PR["profiles.py<br/>T-slot, I-beam, channel"]
+    CE --> SM["sheet_metal.py<br/>bends, flanges, boxes"]
+    CE --> MA["materials.py<br/>density, mass properties"]
+    CE --> RC["assemblies_recipes.py<br/>turbojet, gear_train"]
+
+    AG --> KN["knowledge.py<br/>TF-IDF RAG over your notes"]
+
+    CE --> V["templates/index.html<br/>Three.js viewport, PBR + IBL"]
+    CE --> D["drawings.py<br/>4-view PDF"]
+    CE --> IO["step_io.py<br/>STEP in and out"]
+    CE --> F["fea.py + fea_worker.py<br/>gmsh + scikit-fem"]
+
+    V --> OUT["STEP · STL · PDF · stress plot"]
+    D --> OUT
+    IO --> OUT
+    F --> OUT
+```
 
 ## Pricing (intent)
 
 | Tier | Price | What you get |
 |---|---|---|
-| **Open source** | $0 | Full feature set, runs locally, MIT license |
-| **Pro** (planned) | $49/month | Hosted instance, priority support, custom knowledge base |
-| **Team** (planned) | $499/month | Shared knowledge base, multi-user sessions, audit logs |
-| **Enterprise** (planned) | Custom | On-premise deployment, SAML/SSO, fine-tuned model for your domain |
+| **Open source** | $0 | Full feature set, runs locally, MIT |
+| **Pro** (planned) | $49/mo | Hosted instance, priority support, custom knowledge base |
+| **Team** (planned) | $499/mo | Shared knowledge base, multi-user sessions, audit logs |
+| **Enterprise** (planned) | custom | On-premise, SAML/SSO, domain fine-tune |
 
----
+## What this is, and what it is not
 
-## What This Is And Isn't
+**It is** a chat-driven CAD tool with real B-rep output, real FEA, and real engineering
+drawings. Comparable in spirit to a text-to-CAD demo, with broader operation coverage
+and a multi-agent design loop on top.
 
-**Is:** A credible chat-driven CAD tool with real B-rep output, real FEA,
-real engineering drawings. Comparable in spirit to KittyCAD's text-to-CAD
-demo but with broader operation coverage and a multi-agent design loop.
+**It is not** a SolidWorks, Onshape or Fusion 360 replacement. Those kernels carry 25 to
+35 years of customer-validated edge cases. This does not have that history. The wedge
+here is speed from a chat prompt to a serviceable part, not authoring 50,000-part
+assemblies with full tolerance stack-ups.
 
-**Isn't:** A SolidWorks / Onshape / Fusion 360 replacement. Those tools
-have 25–35 years of customer-validated edge cases baked into their
-kernels. Chat CAD doesn't have that history. Chat CAD's wedge is
-**speed of getting to a serviceable part from a chat prompt**, not
-authoring 50,000-part assemblies with full tolerance stack-ups.
-
-**Will be:** Whatever the first 10 paying customers tell us it needs to be.
-
----
+**It will be** whatever the first ten paying customers say it needs to be.
 
 ## License
 
@@ -171,6 +172,10 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-## Built by [Samarjith Biswas](https://samarjithbiswas.com)
+<div align="center">
 
-Mechanical engineering · acoustic metamaterials · agentic AI for design.
+Built by **[Samarjith Biswas, Ph.D.](https://samarjithbiswas.com)**
+
+Mechanical engineering &nbsp;·&nbsp; acoustic metamaterials &nbsp;·&nbsp; agentic AI for design
+
+</div>
